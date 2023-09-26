@@ -29,8 +29,14 @@ Find and print the largest of three numbers.
 '''
 a=175
 b=200
-c=400
+c=500
 
+if a>=500:
+    print(175)
+elif b>=500:
+    print(200)
+elif c>=500:
+    print(500)
 
 
 
