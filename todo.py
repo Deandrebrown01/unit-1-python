@@ -1,28 +1,30 @@
 ToDos=[]
 
-A=input("What do you want to add?")
-
-ToDos.append(A)
-print(ToDos)
 
 
-
-
-
-Remove=input("Would you like to remove anything?")
-
-
-delete=input("What would you like to remove from the list?")
-
-
-if Remove=='Yes':
-    ToDos.remove(delete)
+while True:
+    Remove=input("Would you like to remove or add from the list?")
+    
     print(ToDos)
-else:
-    print("Ok No Problem")
 
-B=print("Your current list is")
-print(ToDos)
+    if Remove =='remove':
+        A=input("What do you want to remove?")
+        ToDos.remove(A)
+        print(ToDos)
+    elif Remove =='add':
+        B=input("What do you want to add?")
+
+        ToDos.append(B)
+        print(ToDos)
+    else:
+        print('Ok No Problem')
+
+    B=print("Your current list is")
+    print(ToDos)
+
+
+
+
 
 
 
