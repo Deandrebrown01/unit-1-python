@@ -39,4 +39,5 @@ Write a program that asks the user for their birthdate and calculates their curr
 age using the datetime module.
 """
 from datetime import datetime
-input=("What is your birthday")
+bday=input("What is your birthday")
+
