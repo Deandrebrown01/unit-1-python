@@ -40,4 +40,5 @@ age using the datetime module.
 """
 from datetime import datetime
 bday=input("What is your birthday")
-
+b_day=datetime.strptime(bday,"%m/%d/%y")
+print(b_day)
