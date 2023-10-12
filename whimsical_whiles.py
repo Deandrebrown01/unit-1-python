@@ -11,10 +11,13 @@ while i<=10:
 2. Countdown:
 Write a program that uses a while loop to print numbers from 10 to 1 in descending order.
 """
+while 10>1:
+    print()
 """
 3. Factorial Calculation:
 Write a program that calculates the factorial of a given number using a while loop.
 """
+
 
 """
 4. Password Guessing Game:
