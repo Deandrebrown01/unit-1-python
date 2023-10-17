@@ -2,7 +2,7 @@
 TASK 1 Even or Odd
 Determine if a number is even or odd.
 '''
-number =input("Give me a number")
+number =input ("Give me a number")
 if number % 2:
     print("It's even")
 else:
