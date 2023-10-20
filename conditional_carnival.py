@@ -2,8 +2,8 @@
 TASK 1 Even or Odd
 Determine if a number is even or odd.
 '''
-number =input ("Give me a number")
-if number % 2:
+number =int(input ("Give me a number"))
+if (number % 2)==0:
     print("It's even")
 else:
     print("It's odd")
@@ -44,12 +44,12 @@ elif c>=500:
 TASK 4: Leap Year
 Determine if a year is a leap year or not.
 '''
-leap=input("Give me a year")
-if leap%4:
-    print("It's a leap year")
-else:
-    print("It's not a leap year")
+year = 2020
 
+if (year % 4) == 0:
+ print("{2020} is a leap year")
+else:
+ print("{2020} is not a leap year")
 '''
 TASK 5: Vowel or Consonant:
 Identify if a character is a vowel or consonant.
