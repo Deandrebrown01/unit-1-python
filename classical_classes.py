@@ -35,17 +35,18 @@ Create objects using these subclasses and call the speak method.
 """
 class Animal:
     def speak():
-        print("Bark")
-
-class Cat:
-    def speak():
+       print()
+class Elephant():
+    def speak1(self):
         print("Meow")
 
-Elephant=Cat("Meow")
-Prince=Animal("Bark")
+class Prince(Elephant):
+    def speak3(self):
+        print("Bark")
 
-Elephant.speak
-
+pet=Prince()
+pet.speak1()
+pet.speak3()
 
 """
 Task 3: Banking
@@ -55,6 +56,19 @@ Include methods for depositing and withdrawing money, which should modify the ba
 
 Test these methods with instances of the class.
 """
-class BankAccount:
-    def deposit():
-        print
+class Bank_Account(object):
+   def __init__(self,balance=0):
+       self.balance=balance
+
+def deposit(self,amount):
+    self.balance+=amount
+    return self.balance
+
+def withdraw(self,amount):
+    if amount>self.balance:
+        return("Transaction cannot be made")
+    self.balance-=amount
+    return self.balance
+
+class MinimumBalanceAccount(Bank_Account):
+    pass
