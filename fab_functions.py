@@ -21,16 +21,28 @@ sum_numbers(12,12)
 # Task 3: Calculate Factorial
 # Write a function `factorial(n)` that calculates the factorial of a given number `n`.
 def my_factorial(n):
-    print()
-
-my_factorial(12)
+   if n==1:
+       return 1
+   else:
+       return n* my_factorial(n-1)
+   
+print(my_factorial(8))
 
 
 
 # Task 4: Check Even or Odd
 # Write a function `is_even(num)` that takes a number as a parameter and returns `True` if the number is even, and `False` otherwise.
+num=(input("Give me a number"))
 def is_even(num):
-    print(num%2)
+   if num %2==0:
+       print("Even")
+       
+   else:
+       print("Odd")
+       
+  
+
+   
 
 
     
@@ -38,3 +50,6 @@ def is_even(num):
 
 # Task 5: Calculate Area of a Rectangle
 # Write a function `calculate_area(length, width)` that calculates and returns the area of a rectangle given its length and width.
+def calculate_area(length,width):
+    print(length*width)
+calculate_area(900,100)
