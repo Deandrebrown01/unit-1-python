@@ -2,7 +2,7 @@
 TASK 1 Even or Odd
 Determine if a number is even or odd.
 '''
-number =input("Give me a number")
+number =input ("Give me a number")
 if number % 2:
     print("It's even")
 else:
@@ -45,6 +45,10 @@ TASK 4: Leap Year
 Determine if a year is a leap year or not.
 '''
 leap=input("Give me a year")
+if leap%4:
+    print("It's a leap year")
+else:
+    print("It's not a leap year")
 
 '''
 TASK 5: Vowel or Consonant:
